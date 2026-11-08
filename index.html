@@ -121,10 +121,15 @@
                         <input type="number" id="pmMin" placeholder="Min Amount">
                         <input type="number" id="pmMax" placeholder="Max Amount">
                         <input type="number" id="pmFee" placeholder="Fee (BDT)">
+                        
+                        <!-- NEW OPTION ADDED HERE -->
                         <select id="pmType">
                             <option value="wallet">Type: Personal Wallet</option>
                             <option value="recharge">Type: Mobile Recharge</option>
+                            <option value="address">Type: ID or Wallet Address</option>
                         </select>
+                        <!-- END NEW OPTION -->
+
                     </div>
                     <button class="save-btn" id="btnMethodAction" onclick="addNewMethod()" style="background:var(--primary);">+ Add Method</button>
                 </div>
@@ -135,8 +140,6 @@
             <div class="card">
                 <h3><i class="fas fa-ad"></i> Ad Networks & Bonus</h3>
                 
-                <!-- GigaPub REMOVED from here -->
-
                 <div class="stats-grid">
                     <div>
                         <label>Monetag Zone ID</label>
